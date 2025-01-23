@@ -1,12 +1,17 @@
-#include<stdlib.h>
-#include<stdio.h>
-int main(){
-    unsigned char a=0x00;
-    a=a|0x01;
-    a=a|0x02;
-    a=a|0x04;
-    a=a|0x08;
+#include <stdio.h>
 
-        printf("a = %02X\n",a);
+int main() {
+    int n, i, j, space;
+    printf("Enter the number of rows for the pyramid: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        for (space = 1; space <= n - i; space++) {
+            printf(" ");
+        }
+        for (j = 1; j <= (2 * i - 1); j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
     return 0;
 }
