@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int smallest(int x, int y, int z)
+{
+    if (!(y / x)) 
+        return (!(y / z)) ? y : z;
+    return (!(x / z)) ? x : z;
+}
+
+int main()
+{
+    int x = 6, y = 8, z = 10;
+    printf("Minimum of 3 numbers is %d", smallest(x, y, z));
+    return 0;
+}
