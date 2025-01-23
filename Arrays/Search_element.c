@@ -23,6 +23,7 @@ int main(){
     int sr = 2;
     int len = sizeof(arr)/sizeof(int);
     search(arr,len,2);
+     return 0;
 }
 
 
